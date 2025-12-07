@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #F5F5F5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .form-select {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    border: 2px solid #0D7C8E;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: #4B5563;
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%230D7C8E'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+  }
+
+  .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(13, 124, 142, 0.5);
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    border: 2px solid #0D7C8E;
+    border-radius: 0.25rem;
+    background-color: white;
+    color: #374151;
+  }
+
+  .form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(13, 124, 142, 0.5);
+  }
+
+  .btn-primary {
+    padding: 0.625rem 1.5rem;
+    background-color: #0D7C8E;
+    color: white;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+
+  .btn-primary:hover {
+    background-color: #0A5F6D;
+  }
+
+  .btn-secondary {
+    padding: 0.625rem 1.5rem;
+    border: 2px solid #0A5F6D;
+    color: #0A5F6D;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+
+  .btn-secondary:hover {
+    background-color: #E8F4F6;
+  }
+}
